@@ -6,7 +6,7 @@ const app = express();
 const Transaction = require("./models/transaction")
 
 app.use(cors({
-  origin: 'https://money-tracker-murex.vercel.app/',  
+  origin: '*',  
   methods: ['GET', 'POST'],
   credentials: true,
 }));
